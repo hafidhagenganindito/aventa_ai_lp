@@ -1,0 +1,475 @@
+/* List-Cards */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-card {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap; /* Agar kartu bisa turun ke bawah jika layar kecil */
+  justify-content: center; /* Pusatkan kartu */
+  gap: 20px; /* Beri jarak antar kartu */
+}
+
+.card {
+  font-family: "Inter", serif;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px; /* Diperkecil agar lebih proporsional */
+  max-width: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+  width: 25%; /* Gambar diperbesar agar lebih seimbang */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card-content {
+  width: 100%;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.card-description {
+  font-size: 18px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .div-card {
+    gap: 15px; /* Jarak antar kartu dikurangi sedikit di layar lebih kecil */
+  }
+
+  .card {
+    width: 90%; /* Lebar kartu diperbesar agar lebih proporsional */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-description {
+    font-size: 15px;
+  }
+
+  .div-card {
+    gap: 10px; /* Kurangi sedikit gap di layar HP */
+  }
+
+  .card-image {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 15px;
+  }
+}
+
+/* Bayangin ... */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-7 {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif;
+  margin-top: 30px;
+}
+
+.text-7 {
+  font-size: 18px; /* 3em = 48px */
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .div-7 {
+    margin-top: 30px;
+  }
+  .text-7 {
+    font-size: 14px; /* 3em = 48px */
+  }
+}
+
+/* List-4  */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-8 {
+  padding: 20px;
+
+  font-family: "Inter", serif;
+}
+
+.text-8 {
+  display: flex;
+  flex-direction: column; /* Mengubah arah flex menjadi kolom */
+  align-items: center; /* Membuat item berada di tengah secara horizontal */
+  text-align: center; /* Membuat teks berada di tengah */
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px; /* Menambahkan margin bawah pada checkmark */
+}
+
+.text-8 p {
+  margin: 0; /* Menghilangkan margin pada paragraf */
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .text-8 {
+    font-size: 15px;
+  }
+
+  .checkmark {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Kamu tidur, tapi order tetap masuk! dan Setiap produk yang terjual, kamu langsung dapat komisi! */
+/* --------------------------------------------------------------------------------------------------------- */
+.message-container {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif; /* Menggunakan font "Inter" */
+}
+
+.title {
+  font-size: 30px; /* 2.5em ≈ 40px */
+  font-weight: bold;
+  color: rgba(185, 0, 0, 1);
+  margin: 0;
+}
+
+.description {
+  font-size: 24px; /* 1.5em ≈ 24px */
+  margin: 5px 0;
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px; /* 2.5em ≈ 40px */
+  }
+
+  .description {
+    font-size: 14px; /* 1.5em ≈ 24px */
+  }
+}
+
+/* img-3 */
+/* --------------------------------------------------------------------------------------------------------- */
+.img-2 {
+  position: relative; /* Agar elemen anak bisa absolute */
+  width: 100%;
+  overflow: hidden; /* Hindari overflow */
+  text-align: center;
+}
+
+/* Gambar full width tanpa gap */
+.img-item-3 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mengecilkan gambar saat ukuran desktop */
+@media screen and (min-width: 1024px) {
+  .img-item-3 {
+    width: 50%; /* Perkecil gambar di desktop */
+    max-width: 900px; /* Maksimal lebar agar tidak terlalu besar */
+    margin: 0 auto; /* Pusatkan gambar */
+  }
+}
+
+/* KATA MEREKA YANG SUDAH PAKAI AVENTA! */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-9 {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif; /* Menggunakan font "Inter" */
+  margin-top: 40px;
+}
+
+.div-9 p {
+  font-size: 30px; /* 2.5em ≈ 40px */
+  margin: 5px 0;
+  color: black;
+}
+
+.text-9 {
+  background: linear-gradient(to right, rgba(22, 98, 173, 1), #78c257);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .div-9 p {
+    font-size: 20px;
+  }
+}
+/* Testimony */
+/* --------------------------------------------------------------------------------------------------------- */
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Inter", serif;
+}
+
+.testimonial-card {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow-box */
+}
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px; /* 1.25em ≈ 20px */
+  color: rgba(22, 98, 173, 1);
+}
+
+.testimonial-card p {
+  font-size: 18px; /* 1.125em ≈ 18px */
+  margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .testimonial-card p {
+    font-size: 16px; /* Mengurangi ukuran font pada layar kecil */
+  }
+}
+
+/* BELI AVENTA AI SEKARANG & MULAI JUALAN OTOMATIS! */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-10 {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif; /* Menggunakan font "Inter" */
+}
+
+.div-10 p {
+  font-size: 30px; /* 2.5em ≈ 40px */
+  margin: 5px 0;
+  background: linear-gradient(to right, rgba(22, 98, 173, 1), #78c257);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .div-10 p {
+    font-size: 25px; /* Mengurangi ukuran font pada layar kecil */
+  }
+}
+
+/* Jangan tunda lagi! Kesempatan jualan gampang & cuan banyak ada di depan mata! */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-11 {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif; /* Menggunakan font "Inter" */
+}
+
+.text-11 {
+  font-size: 20px; /* 2.5em ≈ 40px */
+
+  color: black;
+  margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .text-11 {
+    font-size: 12px; /* 2em ≈ 32px */
+  }
+}
+
+/* Dengan total benefit senilai Rp. 5.000.000++ MULAI DARI rp 10.000 */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-12 {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif; /* Menggunakan font "Inter" */
+}
+
+.text-12 {
+  font-size: 24px; /* 1.5em ≈ 24px */
+  margin: 5px 0;
+  color: black;
+}
+
+.text-12-1 {
+  font-size: 32px; /* 2em ≈ 32px */
+  font-weight: bold;
+  margin: 5px 0;
+  color: black;
+}
+
+.text-12-2 {
+  font-size: 40px; /* 2.5em ≈ 40px */
+  font-weight: bold;
+  margin: 5px 0;
+  color: rgba(22, 98, 173, 1);
+}
+
+.text-12-3 {
+  font-size: 32px; /* 2em ≈ 32px */
+  font-weight: bold;
+  margin: 5px 0;
+  color: black;
+}
+
+.text-12-4 {
+  font-size: 40px; /* 2.5em ≈ 40px */
+  font-weight: bold;
+  margin: 5px 0;
+  color: rgba(67, 191, 42, 1);
+}
+
+.text-12-5 {
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .text-12 {
+    font-size: 20px; /* Mengurangi ukuran font pada layar kecil */
+  }
+
+  .text-12-1,
+  .text-12-3 {
+    font-size: 28px; /* Mengurangi ukuran font pada layar kecil */
+  }
+
+  .text-12-2,
+  .text-12-4 {
+    font-size: 36px; /* Mengurangi ukuran font pada layar kecil */
+  }
+}
+
+/* BELI AVENTA SEKARANG */
+/* --------------------------------------------------------------------------------------------------------- */
+.buy-button {
+  background: linear-gradient(85.31deg, #1662ad 0.7%, #43bf2a 119.45%);
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 350px;
+  margin: 20px auto;
+  font-family: "Inter", serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+.buy-button p {
+  font-size: 20px; /* 2em ≈ 32px */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .buy-button p {
+    font-size: 18px; /* Mengurangi ukuran font pada layar kecil */
+  }
+
+  .buy-button {
+    padding: 20px 5px; /* Mengurangi padding pada layar kecil */
+  }
+}
+
+/* Admin Contact */
+/* --------------------------------------------------------------------------------------------------------- */
+.admin-profile {
+  text-align: center;
+  padding: 20px;
+  font-family: "Inter", serif;
+}
+
+.admin-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(359.85deg, #283d52 0.13%, #476e95 99.87%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+}
+
+.admin-image img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.admin-name {
+  font-size: 18px; /* 1.5em ≈ 24px */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .admin-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .admin-name {
+    font-size: 16px; /* Mengurangi ukuran font pada layar kecil */
+  }
+}
+/* --------------------------------------------------------------------------------------------------------- */

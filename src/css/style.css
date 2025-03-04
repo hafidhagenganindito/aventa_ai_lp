@@ -1,0 +1,367 @@
+/* Hilangkan margin dan padding default */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Pastikan parent tidak ada padding */
+#app {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* tapi bingung mulai dari mana?  */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-1 {
+  font-family: "Inter", serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #ccc; /* Border abu-abu */
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%; /* Lebar responsif */
+  max-width: 500px; /* Lebar maksimum */
+  margin: 20px auto; /* Membuat elemen berada di tengah */
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 0 4px 8px rgba(185, 0, 0, 0.5); /* Efek bayangan */
+}
+
+.text-1 {
+  font-size: 20px; /* 1.2em → 19.2px */
+  line-height: 1.6;
+}
+
+.text-1-1 {
+  font-size: 20px; /* 1.2em → 19.2px */
+  line-height: 1.6;
+  color: rgba(232, 20, 0, 1);
+}
+
+/* Media query untuk ukuran layar kecil */
+@media (max-width: 480px) {
+  .text-1 .text-1-1 {
+    font-size: 15px; /* 1em → 16px */
+  }
+}
+
+/* Img Woman */
+/* --------------------------------------------------------------------------------------------------------- */
+.img {
+  display: flex;
+  justify-content: center; /* Pusatkan gambar */
+  align-items: center;
+  width: 100%;
+  margin-top: -70px;
+}
+
+.img-item-1 {
+  width: 90%; /* Gunakan persentase agar tetap fleksibel */
+  max-width: 300px; /* Batasi ukuran maksimum di desktop */
+  min-width: 200px; /* Pastikan gambar tidak terlalu kecil di mobile */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Responsif untuk Mobile */
+@media screen and (max-width: 768px) {
+  .img-item-1 {
+    width: 80%; /* Pastikan tetap besar di layar kecil */
+    min-width: 280px; /* Jaga agar tetap proporsional */
+    max-width: 400px; /* Batasi ukuran maksimum di mobile */
+  }
+}
+
+/* Bg-white-transparent */
+.bg-white-transparent {
+  display: flex;
+  justify-content: center; /* Pusatkan gambar */
+  align-items: center;
+  width: 100%;
+  margin-top: -80px;
+}
+
+/* Lists */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-2 {
+  padding: 20px;
+  font-family: "Inter", serif;
+  text-align: center;
+}
+
+.text-2 {
+  background-color: rgba(22, 98, 173, 1);
+  color: white;
+  padding: 15px 20px;
+  margin: 10px auto;
+  border-radius: 30px;
+  font-size: 19px; /* 1.2em = 19.2px */
+
+  width: 80%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Media query untuk ukuran layar kecil */
+@media (max-width: 480px) {
+  .text-2 {
+    font-size: 16px; /* 1em = 16px */
+    padding: 10px 15px;
+  }
+}
+
+/* TAPI… SETELAH BERANI MULAI, kok malah tambah pusing? 
+style */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-3 {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif;
+}
+
+.text-3 {
+  font-size: 20px; /* 3em = 48px */
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.text-3-1 {
+  color: red;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .text-3 {
+    font-size: 15px; /* 2.5em = 40px */
+  }
+}
+
+/* Capek follow-up pelanggan yang ga pasti! */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-4 {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif;
+}
+
+.text-4 {
+  font-size: 18px; /* 3em = 48px */
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .div-4 {
+    margin-top: -10px;
+  }
+  .text-4 {
+    font-size: 14px; /* 3em = 48px */
+  }
+}
+
+/* Lists-2 */
+/* --------------------------------------------------------------------------------------------------------- */
+.chat-container {
+  padding: 20px;
+  font-family: "Inter", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-bubble {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 19px; /* 1.2em = 19.2px, dibulatkan menjadi 19px */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan shadow */
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .chat-bubble {
+    font-size: 16px; /* 1em = 16px */
+    padding: 10px 15px;
+  }
+}
+
+/* Img-2 */
+/* --------------------------------------------------------------------------------------------------------- */
+.img-1 {
+  position: relative; /* Agar elemen anak bisa absolute */
+  width: 100%;
+  overflow: hidden; /* Hindari overflow */
+  text-align: center;
+}
+
+/* Gambar full width tanpa gap */
+.img-item-2 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mengecilkan gambar saat ukuran desktop */
+@media screen and (min-width: 1024px) {
+  .img-item-2 {
+    width: 50%; /* Perkecil gambar di desktop */
+    max-width: 900px; /* Maksimal lebar agar tidak terlalu besar */
+    margin: 0 auto; /* Pusatkan gambar */
+  }
+}
+
+/* dan tantangan baru lain muncul… 😱 */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-5 {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif;
+  margin-top: 20px;
+}
+
+.text-5 {
+  font-size: 18px; /* 3em = 48px */
+
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .div-5 {
+    margin-top: 10px;
+  }
+  .text-5 {
+    font-size: 14px; /* 3em = 48px */
+  }
+}
+
+/* Lists-3 */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-6 {
+  font-family: "Inter", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Inter", serif;
+}
+
+.text-6 {
+  background-color: rgba(185, 0, 0, 1);
+  color: white;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px; /* 1.25em ≈ 20px */
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .text-6 {
+    font-size: 18px; /* Mengurangi ukuran font pada layar kecil */
+    padding: 10px 15px; /* Mengurangi padding pada layar kecil */
+  }
+}
+
+/* Biarkan AVENTA bantu Langkah Bisnismu! */
+/* --------------------------------------------------------------------------------------------------------- */
+.div-7 {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif;
+}
+
+.text-7 {
+  font-size: 40px; /* 3em = 48px */
+
+  color: rgba(22, 98, 173, 1);
+  margin-bottom: 5px;
+}
+
+.text-7-2 {
+  font-size: 40px; /* 3em = 48px */
+
+  color: rgba(22, 98, 173, 1);
+  margin: 0;
+}
+
+.text-7-1 {
+  font-weight: bold;
+  font-weight: bold;
+  background: linear-gradient(to right, rgba(22, 98, 173, 1), #78c257);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .text-7,
+  .text-7-2 {
+    font-size: 30px; /* 2.5em = 40px */
+  }
+}
+
+/* Pakai AVENTA, semua masalah langsung beres! ✅ */
+/* --------------------------------------------------------------------------------------------------------- */
+.aventa-solution {
+  text-align: center;
+
+  padding: 20px;
+  font-family: "Inter", serif; /* Menggunakan font "Inter" */
+}
+
+.aventa-solution p {
+  font-size: 20px; /* 2em = 32px */
+  margin: 5px 0;
+  color: black;
+}
+
+.aventa-word {
+  background: linear-gradient(to right, rgba(22, 98, 173, 1), #78c257);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.checkmark {
+  font-size: 32px; /* Ukuran checkmark */
+  color: #78c257; /* Warna checkmark hijau */
+}
+@media (max-width: 480px) {
+  .aventa-solution p {
+    font-size: 15px;
+  }
+
+  .checkmark {
+    font-size: 15px; /* Ukuran checkmark */
+  }
+}
+
+/* List-Cards */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
